@@ -102,7 +102,7 @@ a {
 }
 
 #showcase-container h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   background-color: beige;
 }
 
@@ -127,11 +127,12 @@ a {
 }
 
 #clients-container {
-  display: flex;
+  display: grid;
   block-size: 25%;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px;
+  width: 50vh;
 }
 
 .client {
@@ -237,15 +238,15 @@ a {
 
 #gallery-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   justify-items: center;
 }
 
 .gallery-image {
   display: inline-block;
-  width: 70vh;
-  height: 70vh;
+  width: 50vh;
+  height: 50vh;
   border-radius: 5px;
   max-width: 50vh;
 }
