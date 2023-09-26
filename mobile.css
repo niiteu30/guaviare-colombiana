@@ -1,0 +1,47 @@
+#navbar {
+  height: 100px;
+}
+#navbar-container {
+  flex-direction: row;
+  padding: 10px;
+}
+#navbar-items {
+  flex-direction: column;
+  width: 100%;
+}
+
+#navbar-itemsli: nth-child(2) {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+/* Showcase */
+
+#showcase-container{
+    padding: 20px;
+}
+
+/* nossos pratos */
+
+#clients-container {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 50vh;
+}
+
+.client {
+  width: 50%;
+}
+
+/* Quem somos */
+
+#features-container {
+  grid-template-columns: 1fr;
+  
+}
+
+#features-container .features:nth-child(2) {
+  margin: 15px 0;
+  
+}
+
+#

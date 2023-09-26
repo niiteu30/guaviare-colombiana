@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Skranji:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main {
+  font-family: "Skiranji", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 60px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: black;
+}
+
+.headline {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, rgb(8, 94, 5), rgb(73, 245, 20));
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  letter-spacing: 2px;
+}
+/* Navbar */
+#navbar {
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(90deg, rgb(8, 94, 5), rgb(73, 245, 20));
+  color: black;
+  font-weight: bold;
+  border-color: blue;
+  border-style: groove;
+  position: fixed;
+}
+
+.logo {
+  font-size: 5vh;
+  font-weight: 900;
+  font-style: oblique;
+  font-optical-sizing: auto;
+}
+
+#bandeira {
+  padding: auto;
+  display: grid;
+  padding: 0;
+}
+
+#navbar-container {
+  width: 80%;
+  height: 100%;
+  margin: auto; /* porque quando um elemento filho é menor que o pai (no caso o #navbar) então o margin:auto deixa o elemento filho no centro  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar-items {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+#navbar-items li {
+  padding: 10px;
+}
+
+/* Showcase */
+
+#showcase {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: url(/conjunto-de-vetores-de-desenho-de-varias-frutas-isolado-em-um-fundo-claro-bons-antecedentes-para-texteis-e-impressao-700-149704357.jpg)
+    center;
+  border-color: red;
+  border-style: groove;
+  border-radius: 10px;
+}
+
+#showcase-container {
+  text-align: center;
+}
+
+#showcase-container h2 {
+  font-size: 2rem;
+  background-color: beige;
+}
+
+#showcase-container p {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+  background-color: beige;
+}
+
+/* Nossos pratos */
+
+#clients {
+  width: 100%;
+  background: url(/aesthetic-banana-leaf-digital-art-8l7t4fz2236suufr.jpg);
+  background-repeat: repeat;
+  background-size: 30%;
+  color: black;
+  padding: 50px;
+  border-color: yellow;
+  border-style: groove;
+  border-radius: 10px;
+}
+
+#clients-container {
+  display: flex;
+  block-size: 25%;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+
+.client {
+  display: inline-block;
+  width: 25%;
+}
+
+/* About */
+
+#features {
+  width: 100%;
+  background-image: linear-gradient(90deg, rgb(59, 113, 230), rgb(13, 44, 184));
+  color: white;
+  padding: 50px;
+}
+
+#features-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#menu {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  border: 10px;
+  border-style: groove;
+  border-color: red;
+}
+
+[data-tooltip] {
+  position: relative;
+  font-weight: bold;
+}
+
+[data-tooltip]:after {
+  display: none;
+  position: absolute;
+  top: -5px;
+  padding: 5px;
+  border-radius: 3px;
+  left: calc(100% + 2px);
+  content: attr(data-tooltip);
+  white-space: nowrap;
+  background-color: #ff0000;
+  color: White;
+}
+
+[data-tooltip]:hover:after {
+  display: block;
+}
+
+#jugos {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#agua {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  border: 10px;
+  border-style: groove;
+  border-color: red;
+}
+
+.cachacinhas {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  border: 10px;
+  border-style: groove;
+  border-color: red;
+}
+
+/* Galeria */
+
+#gallery {
+  width: 100%;
+  margin: auto;
+  padding: 10px;
+  background: blue;
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.gallery-image {
+  display: inline-block;
+  width: 70vh;
+  height: 70vh;
+  border-radius: 5px;
+  max-width: 50vh;
+}
+
+/* Footer */
+
+#footer {
+  background: rgba(233, 6, 6, 0.74);
+  padding: 30px;
+  text-align: center;
+}
